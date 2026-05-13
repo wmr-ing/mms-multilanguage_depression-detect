@@ -81,7 +81,7 @@ class Fusion_MMS(nn.Module):
                                      self.audio_hidden_dims,
                                      num_layers=self.rnn_layers,
                                      dropout=self.dropout,
-                                     bidirectional=False,
+                                     bidirectional=True,
                                      batch_first=True)
 
         self.fc_audio = nn.Sequential(
